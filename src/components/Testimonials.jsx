@@ -55,7 +55,7 @@ const Testimonials = () => {
     const item = testimonials[current];
 
     return (
-        <section id="testimonials" className="py-20 md:py-28 bg-background-alt">
+        <section id="testimonials" className="py-20 md:py-28 bg-background">
             <div className="max-w-7xl mx-auto px-4 md:px-6">
                 {/* Heading */}
                 <motion.div
@@ -79,7 +79,7 @@ const Testimonials = () => {
                     <AnimatePresence mode="wait" custom={direction}>
                         <motion.div
                             key={current}
-                            className="bg-background rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-sm border border-gray/10"
+                            className="bg-background-alt rounded-2xl md:rounded-3xl p-8 md:p-12 shadow-sm border border-gray/10"
                             custom={direction}
                             variants={slideVariants}
                             initial="enter"
