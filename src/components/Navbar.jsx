@@ -48,7 +48,7 @@ const Navbar = () => {
 
                     <span
                         className={`text-xl font-bold font-heading whitespace-nowrap transition-colors ${
-                            scrolled ? "text-dark" : "text-white"
+                            scrolled ? "text-gray" : "text-white"
                         }`}>
                         {" "}
                         Codecelix
@@ -63,7 +63,7 @@ const Navbar = () => {
                             href={link.href}
                             className={`text-sm font-medium transition-colors duration-200 ${
                                 scrolled
-                                    ? "text-gray hover:text-dark"
+                                    ? "text-gray hover:text-gray-alt"
                                     : "text-white/80 hover:text-white"
                             }`}>
                             {link.label}

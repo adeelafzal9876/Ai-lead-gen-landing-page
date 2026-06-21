@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
+import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Portfolio from "./components/Portfolio";
 import FinalCTA from "./components/FinalCTA";
@@ -10,6 +11,7 @@ function App() {
         <div className="font-body">
             <Navbar />
             <Hero />
+            <Services />
             <WhyChooseUs />
             <Portfolio />
             <Testimonials />
