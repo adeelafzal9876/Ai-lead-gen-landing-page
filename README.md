@@ -6,7 +6,7 @@ This project showcases a complete landing page with multiple sections including 
 ---
 
 ## 🌐 Live Demo
-[Clickable Text](URL)
+[AI Lead Generation Landing Page](https://ai-lead-gen-landing-page.vercel.app/)
 
 ---
 
