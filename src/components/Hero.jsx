@@ -28,32 +28,37 @@ const Hero = () => {
         const timer = setInterval(() => {
             setAnimatingCounts((prev) => {
                 let ans = [];
+
+                let isDone = true;
+
                 for (let i = 0; i < stats.length; i++) {
                     const stat = stats[i];
+
                     if (typeof stat.value !== "number") {
                         ans.push(stat.value);
+                        continue;
+                    }
+
+                    const current = prev[i] || 0;
+
+                    if (current < stat.value) {
+                        ans.push(current + 1);
+                        isDone = false;
                     } else {
-                        if (prev[i] >= stat.value) {
-                            ans.push(stat.value);
-                        } else {
-                            ans.push((prev[i] || 0) + 1);
-                        }
+                        ans.push(stat.value);
                     }
                 }
-                let stopTimer = true;
-                for (let i = 0; i < stats.length; i++) {
-                    if (prev[i] !== stats.value) {
-                        stopTimer = false;
-                        break;
-                    }
-                }
-                if (stopTimer) {
+
+                if (isDone) {
                     clearInterval(timer);
                 }
+
                 return ans;
             });
         }, 50);
-    }, []);
+
+        return () => clearInterval(timer); // important cleanup
+    }, [stats]);
 
     return (
         <section
