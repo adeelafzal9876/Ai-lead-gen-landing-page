@@ -4,6 +4,7 @@ import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
+import Contact from "./components/Contact";
 import FinalCTA from "./components/FinalCTA";
 import FAQ from "./components/FAQ";
 
@@ -16,6 +17,7 @@ function App() {
             <WhyChooseUs />
             <Portfolio />
             <Testimonials />
+            <Contact />
             <FAQ />
             <FinalCTA />
         </div>
