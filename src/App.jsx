@@ -4,9 +4,10 @@ import Services from "./components/Services";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Portfolio from "./components/Portfolio";
 import Testimonials from "./components/Testimonials";
+import FAQ from "./components/FAQ";
 import Contact from "./components/Contact";
 import FinalCTA from "./components/FinalCTA";
-import FAQ from "./components/FAQ";
+import Footer from "./components/Footer";
 
 function App() {
     return (
@@ -17,9 +18,10 @@ function App() {
             <WhyChooseUs />
             <Portfolio />
             <Testimonials />
-            <Contact />
             <FAQ />
+            <Contact />
             <FinalCTA />
+            <Footer />
         </div>
     );
 }
